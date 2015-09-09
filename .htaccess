@@ -1,0 +1,2 @@
+php_flag display_error on
+php_value error_reporting 2147483647
