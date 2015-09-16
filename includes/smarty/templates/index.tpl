@@ -44,7 +44,9 @@
             
         <div>    
             <input type="submit" name={$button_name} value={$button_value} />
-            <input type="hidden" name="edit_id" id="hiddenField" value="{$default_edit_id}" />
+            {if $button_name eq 'edit'} 
+            <input type="hidden" name="id" id="hiddenField" value="{$default_edit_id}" />
+            {/if}
         </div>
     </form>
 

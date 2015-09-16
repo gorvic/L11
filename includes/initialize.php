@@ -16,7 +16,7 @@ $smarty->cache_dir = SMARTY_PATH.'/cache';
 $smarty->config_dir = SMARTY_PATH.'/configs';
 
 //firephp
-require_once(LIBPATH.'/FirePHPCore/FirePHP.class.php');
+require_once(LIB_PATH.'/FirePHPCore/FirePHP.class.php');
 $firePHP = FirePHP::getInstance(true);
 $firePHP->setEnabled(true);
 
@@ -25,13 +25,14 @@ $firePHP->setEnabled(true);
 require_once ('db_config.php');
 
 //DBSimple
-require_once(LIBPATH.'/dbsimple/DbSimple/Generic.php');
-require_once(LIBPATH.'/dbsimple/config.php');
+require_once(LIB_PATH.'/dbsimple/DbSimple/Generic.php');
+require_once(LIB_PATH.'/dbsimple/config.php');
 
 //db connection
-require_once(LIBPATH.'/db_connection.php');
+require_once(LIB_PATH.'/db_connection.php');
+
 
 //common functionality
 //require_once("./includes/first_fill_of_tables.php");
-require_once(LIBPATH.'/dbs_functions.php');
-require_once(LIBPATH.'/functions.php');
+//require_once(LIB_PATH.'/dbs_functions.php');
+require_once(LIB_PATH.'/functions.php');

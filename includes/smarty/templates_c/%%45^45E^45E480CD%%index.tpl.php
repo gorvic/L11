@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25-dev, created on 2015-09-09 09:11:48
+<?php /* Smarty version 2.6.25-dev, created on 2015-09-16 07:57:11
          compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'html_radios', 'index.tpl', 8, false),array('function', 'html_options', 'index.tpl', 26, false),array('modifier', 'default', 'index.tpl', 8, false),)), $this); ?>
@@ -66,8 +66,10 @@ unset($_smarty_tpl_vars);
             <input type="submit" name=<?php echo $this->_tpl_vars['button_name']; ?>
  value=<?php echo $this->_tpl_vars['button_value']; ?>
  />
-            <input type="hidden" name="edit_id" id="hiddenField" value="<?php echo $this->_tpl_vars['default_edit_id']; ?>
+            <?php if ($this->_tpl_vars['button_name'] == 'edit'): ?> 
+            <input type="hidden" name="id" id="hiddenField" value="<?php echo $this->_tpl_vars['default_edit_id']; ?>
 " />
+            <?php endif; ?>
         </div>
     </form>
 

@@ -37,3 +37,5 @@ function dbLogger($db, $sql, $caller)
 		$firePHP->groupEnd();
 	}
 }
+
+$database = & $connection;
